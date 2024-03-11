@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Phan - Computer Science Graduate</title>
+    <link rel="icon" type="image/png" href="assets/thanh_logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body class="fade-in-effect">
+    <header>
+        <nav id="full-nav-bar">
+            <p class="logo-page">Thanh Phan</p>
+            <div>
+                <ul class="nav-list">
+                    <li><a href="#about">About Thanh</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="mobile-nav-bar">
+            <p class="logo-page">Thanh Phan</p>
+            <div class="mobile-list">
+                <!-- The 3 lines symbols of the nav-bar menu -->
+                <div class="mobile-icon" onclick="toggleList()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="mobile-list-links">
+                    <li><a href="#about" onclick="toggleList()">About Thanh</a></li>
+                    <li><a href="#projects" onclick="toggleList()">Projects</a></li>
+                    <li><a href="#experience" onclick="toggleList()">Experience</a></li>
+                    <li><a href="#contact" onclick="toggleList()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <img src="./assets/profile.jpeg" alt="Thanh profile image">
+            <div id="basic-info">
+                <h1>Thanh Phan</h1>
+                <p class="info-p" id="typing"></p>
+                <button class="btn color-btn" 
+                        onclick="location.href='./#contact'">
+                        Contact Me
+                </button>
+            </div>
+        </section>
+        <section id="about">
+            <p class="intro-p">Welcome</p>
+            <h1>Nice To Meet You,</h1>
+            <div class="section-container">
+                <img
+                    src="assets/thanh_logo.png"
+                    alt="Thanh logo image"     
+                >
+                <div class="about-details-container">
+                    <div class="general-wrapper">
+                        <div class="details-container">
+                        <img
+                            src="./assets/education.png"
+                            alt="Education icon"
+                            class="icon"
+                        >
+                        <h3>Education</h3>
+                        <p>B.S. Computer Science</p>
+                        </div>
+                    </div>
+                    <p id="about-text">
+                        I am Thanh, a Computer Science recent graduate from UCSD who are eager to 
+                        seek for opportunities to apply my skills and gain experience during my 
+                        career journey. Growing up in Vietnam encourages me to explore more to be 
+                        able to expand my view and understanding. I am excited to have chances to 
+                        learn new knowledge and test my limits.
+                    </p>
+                    <div id="socials">
+                        <img src="/assets/linkedin.png" 
+                             alt="LinkedIn profile" 
+                             class="icon" 
+                             onclick="location.href='https://www.linkedin.com/in/thanh-ngan-phan/'">
+                        <img src="/assets/github.png" 
+                             alt="Github profile" 
+                             class="icon" onclick="location.href='https://github.com/tngPhVN'">
+                    </div>
+                </div>
+            </div>
+            <img
+                src="./assets/arrow.png"
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='./#projects'"
+            >
+        </section>
+        <section id="projects">
+            <p class="intro-p">My Recent</p>
+            <h1>Projects</h1>
+            <div class="general-wrapper">
+                <!-- Project template -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/MiniMA.png" 
+                             alt="the top level of MiniMA architecture" 
+                             class="project-img">
+                    </div>
+                    <h2>MiniMA Architecture</h2>
+                    <p>MiniMA is a small-scaled design of computer architecture, built using 
+                       SystemVerilog and Python, that adapts the original load-store and 
+                       accumulator machines with a change in the number of bits using, 9-bit 
+                       machine code. The intention of this design is to prioritize simplicity 
+                       in memory while able to ensure time efficiency.
+                    </p>
+                    <button
+                        class="btn color-btn"
+                        onclick="location.href='https://github.com/tngPhVN/MiniMA-computer-architecture'"
+                        >
+                        Github
+                    </button>
+                </div>
+            </div>
+            <img src="assets/arrow.png" 
+                 alt="arrow" 
+                 class="icon arrow" 
+                 onclick="location.href='./#experience'">
+        </section>
+        <section id="experience">
+            <p class="intro-p">Explore My</p>
+            <h1>Experience</h1>
+            <div class="general-wrapper">
+                <div class="details-container">
+                  <h2>Languages</h2>
+                  <div class="article-container">
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3>HTML</h3>
+                      </article>
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3>C++</h3>
+                      </article>
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3>CSS</h3>
+                      </article>
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3>Python</h3>
+                      </article>
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3>JavaScript</h3>
+                      </article>
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3>SystemVerilog</h3>
+                      </article>
+                  </div>
+                </div>
+                <div class="details-container">
+                  <h2>Tools</h2>
+                  <div class="article-container">
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3>VS Code</h3>
+                      </article>
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3>Git</h3>
+                      </article>
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3>ModelSim</h3>
+                      </article>
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3>Intel Quartus Prime</h3>
+                      </article>
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3>Jupyter Notebook</h3>
+                      </article>
+                  </div>
+                </div>
+                <div class="details-container">
+                  <h2>Relevant Courses</h2>
+                  <div class="article-container">
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3>Software Engineering</h3>
+                      </article>
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3>Web Client Languages</h3>
+                      </article>
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3>Design & Analysis of Algorithms</h3>
+                      </article>
+                      <article>
+                          <img
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                          >
+                          <h3> Principles of Computer Operating Systems</h3>
+                      </article>
+                  </div>
+                </div>
+              </div>
+            <img src="assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#contact'">
+        </section>
+        <section id="contact">
+            <p class="intro-p">Thank you,</p>
+            <h1>Contact Me</h1>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                  <img
+                    src="./assets/email.png"
+                    alt="Email icon"
+                    class="icon contact-icon email-icon"
+                  >
+                  <p><a href="mailto:thanhphn0120@gmail.com">thanhphn0120@gmail.com</a></p>
+                </div>
+                <div class="contact-info">
+                  <img
+                    src="./assets/linkedin.png"
+                    alt="LinkedIn icon"
+                    class="icon"
+                    id="linkedin-contact"
+                  >
+                  <p><a href="https://www.linkedin.com/in/thanh-ngan-phan/">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#about">About Thanh</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Copyright &#169; 2024 Thanh Phan.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
