@@ -7,6 +7,10 @@
         height: 83vh;
         margin-bottom: 0;
     }
+
+    #profile, .section-container {
+        flex-wrap: wrap;
+    }
     
     article {
         font-size: 1rem;
@@ -46,6 +50,7 @@
         width: auto;
         height: 46vw;
         justify-content: center;
+        max-width: 270px;
     }
     
     .info-p {
@@ -118,9 +123,9 @@
     }
 
     #profile, .section-container {
-      display: grid;
-      row-gap: 0;
-      align-items: center;
+        display: flex; 
+        row-gap: 0;
+        align-items: center;
     }
     
     .general-wrapper {
@@ -130,5 +135,9 @@
     #contact,
     #projects {
       height: fit-content;
+    }
+
+    #projects .general-wrapper p {
+        margin-bottom: 1rem;
     }
 }

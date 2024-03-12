@@ -183,7 +183,6 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -207,6 +206,7 @@ img[alt="Thanh profile image"] {
     width: 400px; 
     margin: auto 0; 
     border-radius: 50%;
+    justify-self:center;
 }    
 
 .info-p {
@@ -258,6 +258,7 @@ img[alt="Thanh logo image"] {
     width: 400px; 
     margin: auto 0; 
     border-radius: 20%;
+    justify-self:center;
 }
 
 /* About */
