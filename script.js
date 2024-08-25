@@ -8,7 +8,7 @@ function toggleList () {
 }
 
 let i = 0;
-let txt = 'a Computer Science recent graduate.';
+let txt = 'Computer Science Graduate';
 let speed = 50;
 
 function typeWriter() {
