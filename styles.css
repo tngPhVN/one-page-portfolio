@@ -18,6 +18,8 @@ body {
     font-style: normal;
     font-optical-sizing: auto;
     background-color: var(--color-4);
+    max-width: 1920px;
+    margin: auto;
 }
 
 html {
@@ -228,10 +230,14 @@ img[alt="Thanh profile image"] {
 }
 
 .icon {
-    background-color: white;
+    background-color: #f9f9f9;
     border-radius: 50%;
     cursor: pointer; 
     height: 2rem;
+}
+
+.logo-icon:hover {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2), -10px -10px 10px var(--color-4);
 }
 
 .btn {
